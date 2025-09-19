@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kayode Joel Fakorede Portfolio</title>
+  <style>
+    /* General Reset */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #ffffff;
+      background: linear-gradient(135deg, #1a0033, #000000);
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar Styles */
+    .sidebar {
+      width: 250px;
+      background: linear-gradient(135deg, #4b0082, #1a0033);
+      color: #ffffff;
+      padding: 2rem 1rem;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+      position: fixed;
+      height: 100%;
+      overflow-y: auto;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      font-weight: bold;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin: 1rem 0;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      display: block;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+      background: #ffcc00;
+      color: #1a0033;
+    }
+
+    /* Main Content */
+    .content {
+      margin-left: 270px;
+      padding: 2rem;
+      flex: 1;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    header p a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    header p a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid #ffffff;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #projects ul li,
+    .cybersecurity-projects ul li,
+    .software-projects ul li,
+    .ongoing-projects ul li {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    section ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    /* Certification status styling */
+    .certification-status {
+      color: #ffcc00;
+      font-style: italic;
+      font-size: 0.9em;
+      margin-left: 8px;
+    }
+
+    /* Learning status styling */
+    .learning-status {
+      color: #ffcc00;
+      font-style: italic;
+      font-size: 0.9em;
+    }
+
+    /* Experience item styling */
+    .experience-item {
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #333;
+    }
+
+    .experience-item:last-child {
+      border-bottom: none;
+    }
+
+    /* Link styling */
+    a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Website link styling */
+    .website-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: rgba(255, 204, 0, 0.2);
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .website-link:hover {
+      background: rgba(255, 204, 0, 0.3);
+    }
+
+    /* Ongoing project styling */
+    .ongoing-project {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid #ffcc00;
+    }
+
+    .ongoing-project h3 {
+      color: #ffcc00;
+      margin-top: 0;
+    }
+
+    .ongoing-project .status {
+      display: inline-block;
+      background: rgba(255, 204, 0, 0.2);
+      color: #ffcc00;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sidebar">
+    <h2>Quick Links</h2>
+    <ul>
+      <li><a href="#career">Career Summary</a></li>
+      <li><a href="#skills">Key Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#ongoing">Ongoing Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <header>
+      <h1>Kayode Joel Fakorede</h1>
+      <p>BSc First Class Honours | Founder of Suntrenia LTD | Software Developer | Cybersecurity Enthusiast</p>
+      <p>Contact: +2347034995589 | +2348027946808 | +2347035517578 | <a
+          href="mailto:akoredekayode@yahoo.com">akoredekayode@yahoo.com</a></p>
+      <a href="https://www.suntrenia.com" target="_blank" class="website-link">www.suntrenia.com</a>
+    </header>
+    <main>
+
+      <section id="career">
+        <h2>Career Summary</h2>
+        <p>I am a passionate and self-driven software developer with 6 years of experience in creating robust, scalable web and mobile applications. As the founder of Suntrenia, a tech company delivering innovative digital solutions, I lead teams in developing software that transforms ideas into impactful products. I'm currently expanding my knowledge in cybersecurity, focusing on secure software practices and threat analysis.</p>
+      </section>
+      
+      <section id="skills">
+        <h2>Key Skills & Technologies</h2>
+        <ul>
+          <li>Frameworks & Stacks: MEAN Stack (MongoDB, Express.js, Angular [React Native, Ionic], Node.js)</li>
+          <li>Programming Languages: JavaScript, Python</li>
+          <li>AI/ML Technologies: <span class="learning-status">Learning scikit-learn, TensorFlow, PyTorch</span></li>
+          <li>Data Science: <span class="learning-status">Learning pandas, numpy, matplotlib</span></li>
+          <li>API Development: REST APIs</li>
+          <li>Cloud Services: Firebase (Firestore, Firebase Auth, Firebase Functions, Firebase Hosting, Firebase Storage), AWS (Amazon S3, AWS Lambda)</li>
+          <li>Databases: MongoDB, Firebase Firestore</li>
+          <li>Platforms: Heroku, Render, Vercel</li>
+          <li>DevOps: CI/CD with GitHub Actions</li>
+          <li>Version Control: Git</li>
+        </ul>
+      </section>
+      
+      <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+          <h3>Mobile Developer – HNG Internship Program</h3>
+          <p><strong>Remote | 2025</strong></p>
+          <ul>
+            <li>Built a cross-platform mobile showcase app using React Native, linking to HNG Hire Pages for mobile developers across different stacks (iOS, Android, Flutter, etc.).</li>
+            <li>Implemented seamless app deployment using Appetize.io, enabling live previews for non-technical stakeholders.</li>
+            <li>Collaborated via GitHub in an agile remote environment; maintained code quality and modular architecture.</li>
+            <li>Contributed to UI/UX features optimized for both Android and iOS devices.</li>
+          </ul>
+          <p><strong>GitHub:</strong> <a href="https://github.com/kay4371/hng-mobile-showcase" target="_blank">github.com/kay4371/hng-mobile-showcase</a></p>
+          <p><strong>Live Preview:</strong> <a href="https://appetize.io/app/b_drihaeahy2yf4ljsrojtu4m7ai" target="_blank">View on Appetize.io</a></p>
+        </div>
+        
+        <div class="experience-item">
+          <h3>React Data Encryption & Decryption App</h3>
+          <p><strong>GitHub Gist:</strong> <a href="https://gist.github.com/kay4371/6380cbd0b583a3853fcf5d299541ce97" target="_blank">https://gist.github.com/kay4371/6380cbd0b583a3853fcf5d299541ce97</a></p>
+          <p><strong>Live Demo:</strong> <a href="https://appetize.io/app/b_5y55b3cng3dj3iekiqbggcq6vm" target="_blank">Appetize.io Emulator</a></p>
+          <p><strong>Tech Stack:</strong> React.js, React Native, JavaScript, TypeScript, XOR Encryption, Caesar Cipher</p>
+          <p><strong>Overview:</strong> Developed a cross-platform encryption and decryption application using React and React Native. The solution leverages both XOR-based encryption (for web) and Caesar Cipher-style shift logic (for mobile), offering simple, client-side data security simulation.</p>
+          <h4>Core Features:</h4>
+          <ul>
+            <li>User-friendly UI for inputting text and secret keys.</li>
+            <li>One-click encryption and decryption of messages.</li>
+            <li>Secure XOR algorithm implementation via custom cryptoUtils.js.</li>
+            <li>React Native version includes clipboard copy functionality and elegant UI using StyleSheet.</li>
+            <li>Fully functional demo with flexible input handling, error alerts, and real-time output display.</li>
+          </ul>
+        </div>
+
+        <div class="software-projects">
+          <h3>Software Development Projects</h3>
+          <ul>
+            <li>
+              <strong>ScholarBroad - Educational Platform:</strong> A comprehensive learning management system that connects students with educational resources and tutors. Features include course management, progress tracking, and interactive learning tools.
+              <br><strong>GitHub:</strong> <a href="https://github.com/kay4371/Scholarbroad.git" target="_blank">github.com/kay4371/Scholarbroad</a>
+              <br><strong>Live Website:</strong> <a href="https://scholarbroad.onrender.com" target="_blank">scholarbroad.onrender.com</a>
+            </li>
+            <li>
+              <strong>Traffic Intelligence System:</strong> Designed a real-time traffic data processing and analysis system using Node.js, Express, and MongoDB. It detects congestion patterns and potential hazards by analyzing route-based data feeds.
+              <br><strong>GitHub:</strong> <a href="https://github.com/kay4371/trafficIntelligenceSystem1" target="_blank">github.com/kay4371/trafficIntelligenceSystem1</a>
+            </li>
+            <li>
+              <strong>Map Security Intelligence System:</strong> Created an interactive intelligence dashboard that maps security events and geo-fences areas of risk using Leaflet.js and custom APIs. Used for visualizing risk zones across Lagos.
+              <br><strong>GitHub:</strong> <a href="https://github.com/kay4371/intelligon_web_map" target="_blank">github.com/kay4371/intelligon_web_map</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="ongoing">
+        <h2>Ongoing Projects</h2>
+        
+        <div class="ongoing-project">
+          <span class="status">In Development</span>
+          <h3>ContentCreature</h3>
+          <p>A revolutionary Node.js application designed to help busy professionals and creators by automating the entire content creation process. The platform generates high-quality content and handles everything from creation to uploading to YouTube, complete with subscriber growth systems.</p>
+          <p><strong>Key Features:</strong></p>
+          <ul>
+            <li>AI-powered content generation for various formats and niches</li>
+            <li>Automated publishing to multiple platforms including YouTube</li>
+            <li>Integrated subscriber growth and engagement system</li>
+            <li>Customizable content strategies based on target audience</li>
+          </ul>
+          <p><em>Details protected for intellectual property reasons</em></p>
+        </div>
+
+        <div class="ongoing-project">
+          <span class="status">In Development</span>
+          <h3>Intellijob</h3>
+          <p>An intelligent job search automation system that revolutionizes how job seekers find and apply for positions. The platform features advanced CV tailoring, automated applications, and interactive communication to streamline the job hunting process.</p>
+          <p><strong>Key Features:</strong></p>
+          <ul>
+            <li>Automated job search across multiple platforms</li>
+            <li>AI-powered CV tailoring for specific positions</li>
+            <li>Smart application system with user consent prompts</li>
+            <li>Interactive communication to keep users informed and in control</li>
+          </ul>
+          <p><em>Details protected for intellectual property reasons</em></p>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li>B.Sc. Human Psychology (First Class Hons), University of Ibadan</li>
+          <li>HND, Accounting, Interlink Polytechnic, Osun State</li>
+        </ul>
+      </section>
+      
+      <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+          <li>Azure Architect <span class="certification-status">(In Progress)</span></li>
+          <li>GCP Certification <span class="certification-status">(Planned)</span></li>
+          <li>Oracle Fundamental Practitioner <span class="certification-status">(Planned)</span></li>
+        </ul>
+        <p><em>Note: Actively pursuing these certifications as part of my professional development plan.</em></p>
+      </section>
+    </main>
+    <footer>
+      <p>© 2024 Kayode Joel Fakorede. All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
